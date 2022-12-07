@@ -584,6 +584,20 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1294991391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294991381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac8fedac8c0c094c87a86e9336499a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1294991390}
+  runSpeed: 40
 --- !u!1 &1743323048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1085,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 901416068562720341, guid: 5cf24b3be50e8754f8dceb3374e5cf9f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 901416068562720342, guid: 5cf24b3be50e8754f8dceb3374e5cf9f, type: 3}
       propertyPath: m_RootOrder
