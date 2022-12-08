@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class CoinCollect2D : MonoBehaviour
-{
-    List<Vector3Int> trackedCells = new List<Vector3Int>();
-    public Tilemap tilemap;
-    public GridLayout gridLayout;
+{        
+    public int coinValue = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +23,12 @@ public class CoinCollect2D : MonoBehaviour
     {
         Debug.Log("trigger");
 
+
         if (other.gameObject.CompareTag("Coins"))
         {
             Debug.Log("its a coin");
             Destroy(other.gameObject);
+            CoinCounter.instance.ChangeScore(coinValue);
         }
     }
 
