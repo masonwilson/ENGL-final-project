@@ -21,7 +21,7 @@ public class CoinCounter : MonoBehaviour
     public void ChangeScore(int coinValue)
     {
         score += coinValue;
-        text.text = "Coins: " + score.ToString();
+        text.text = "Coins: " + score.ToString() + " /35";
     }
 
     // Update is called once per frame
